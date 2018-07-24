@@ -5,15 +5,14 @@ const Markup = require('telegraf/markup')
 const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.start((ctx) => {
     ctx.reply('Добро пожаловать на Поле Чудес!');
-    ctx.replyWithVideo({
-        source: fs.createReadStream('./assets/images/game_screen.png')
-      })
 });
 
 
 
-bot.command('new', (ctx) => {
-
+bot.command('new', (ctx) => {  
+    ctx.replyWithPhoto({
+        source: fs.createReadStream('./assets/images/game_screen.png')
+      })
 });
 
 bot.command('roll', (ctx) => {
@@ -21,7 +20,7 @@ bot.command('roll', (ctx) => {
 });
 
 bot.command('wrong', (ctx) => {
-    ctx.replyWith
+    //ctx.replyWith
 });
 
 
