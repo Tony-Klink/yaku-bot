@@ -1,6 +1,7 @@
-const Telegraf = require('telegraf')
-const Extra = require('telegraf/extra')
-const Markup = require('telegraf/markup')
+const Telegraf = require('telegraf');
+const Extra = require('telegraf/extra');
+const Markup = require('telegraf/markup');
+const fs = require('fs');
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.start((ctx) => {
