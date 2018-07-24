@@ -4,6 +4,7 @@
   "description": "Pole chudes. Vashe ochko uhodit v zritelny zal",
   "main": "bot.js",
   "scripts": {
+    "start": "node bot.js",
     "test": "test"
   },
   "keywords": [
